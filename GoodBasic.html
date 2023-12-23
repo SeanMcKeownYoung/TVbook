@@ -9,8 +9,8 @@
 
 		<style type="text/css">
 
-		/* Outlines the grids, remove when sending
-		table td { border: 1px solid cyan; } */
+		/* Outlines the grids, remove when sending*/
+		table td { border: 1px solid cyan; } 
 		
 
 		/* CLIENT-SPECIFIC STYLES */
@@ -20,8 +20,53 @@
 		strong {font-weight: 900;}
 		:hover.hovertext {font-weight: 500 !important ;color:#000000 !important;}
 		.r-pad { padding-right: 10px !important; }
+		.parent {
+			width: 600px;
+		}
+		.child {
+		   display: inline-block;justify-content: space-between;width: 275px;margin: 10px;height: auto;}
 
+		.parent:hover .child {
+			opacity: .85;
+			filter: grayscale(100%);
+			box-shadow: 0;}
+		.parent .child:hover {
+			opacity: 1;
+			filter: grayscale(0%);}
 
+			.effect.effect-2 {
+  transition: all 0.2s linear 0s;
+  
+  &:before {
+    content: "➜";
+	align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 100%;
+    background-color: #ffffff5e;
+    transition: all 0.2s linear 0s;
+  }
+  
+  &:hover {
+    text-indent: 30px;
+    
+    &:before {
+      right: 0;
+      text-indent: 0px;
+    }
+  }
+}
+.effect {
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+}
 
 		/* RESET STYLES */
 		img { border: 0; outline: none; text-decoration: none; }
@@ -376,15 +421,10 @@
 					</tr>
 				<tr>
 						<td align="center">
-
-				<style>
-							.effect {text-align: left; display: inline-block; position: relative; text-decoration: none;overflow: hidden;}
-		.effect.effect-2 { transition: all 0.2s linear 0s; &:before {content: "➜";align-items: center; justify-content: center; display: flex; position: absolute; top: 0; right: -50px; width: 50px; height: 100%; background-color: #ffffff5e; transition: all 0.2s linear 0s;} &:hover {text-indent: 30px; &:before {right: 0; text-indent: 0px; }}}
-				</style>
 						<!-- BULLETPROOF BUTTON -->
 						<table class="w-resize90 " width="100%" border="0" cellspacing="0" cellpadding="12">
 						<tbody><tr>
-						<td class="w-resize-button effect effect-2" align="left" 
+						<td class="w-resize-button" align="left" 
 						style="font-family:Helvetica, sans-serif; font-size:22px;font-weight: 400;color:#ffffff; display:block;vertical-align:middle; -webkit-text-size-adjust: none; padding:12px 0px 12px 12px; margin-left: 25px; margin-right: 25px; background-color: #f94040; "
 						<a href="#link" target="_blank" style="color:#ffffff; text-decoration:none; display:inline-block; width:100%">Activate!</a>
 						</td>
@@ -439,7 +479,7 @@
 						<!-- BULLETPROOF BUTTON -->
 						<table class="w-resize90 " width="100%" border="0" cellspacing="0" cellpadding="12">
 							<tbody><tr>
-							<td class="w-resize-button effect effect-2" align="left" 
+							<td class="w-resize-button" align="left" 
 							style="font-family:Helvetica, sans-serif; font-size:22px;font-weight: 400;color:#ffffff; display:block;vertical-align:middle; -webkit-text-size-adjust: none; padding:12px 0px 12px 12px; margin-left: 25px; margin-right: 25px; background-color: #00bfff;"
 							<a href="#link" target="_blank" style="color:#ffffff; text-decoration:none; display:inline-block; width:100%">Explore!</a>
 							</td>

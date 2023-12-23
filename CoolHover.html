@@ -20,8 +20,53 @@
 		strong {font-weight: 900;}
 		:hover.hovertext {font-weight: 500 !important ;color:#000000 !important;}
 		.r-pad { padding-right: 10px !important; }
+		.parent {
+			width: 600px;
+		}
+		.child {
+		   display: inline-block;justify-content: space-between;width: 275px;margin: 10px;height: auto;}
 
+		.parent:hover .child {
+			opacity: .85;
+			filter: grayscale(100%);
+			box-shadow: 0;}
+		.parent .child:hover {
+			opacity: 1;
+			filter: grayscale(0%);}
 
+			.effect.effect-2 {
+  transition: all 0.2s linear 0s;
+  
+  &:before {
+    content: "➜";
+	align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 100%;
+    background-color: #ffffff5e;
+    transition: all 0.2s linear 0s;
+  }
+  
+  &:hover {
+    text-indent: 30px;
+    
+    &:before {
+      right: 0;
+      text-indent: 0px;
+    }
+  }
+}
+.effect {
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+}
 
 		/* RESET STYLES */
 		img { border: 0; outline: none; text-decoration: none; }
@@ -219,10 +264,10 @@
 			<tr>
 				<td align="center" valign="top">
 			<!-- ALIGNMENT TABLE - CHANGE width="" TO ADJUST DISPLAY WIDTH -->
-				<table class="imgresize100 mobile-300" role="presentation" width="600" cellpadding="0" cellspacing="0" border="0">
+				<table class="imgresize100 mobile-320" role="presentation" width="640" cellpadding="0" cellspacing="0" border="0">
 					<tr>
-						<td align="left" valign="top">
-							<img src="https://media.sailthru.com/composer/images/sailthru-prod-6fj/DIGITL-ILLO2.jpg" width="100%" style="margin:0; padding:0; border:none; display:block" border="0" alt="Extra" />
+						<td align="center" valign="top">
+							<img src="https://media.sailthru.com/composer/images/sailthru-prod-6fj/DIGITL%20ILLO.jpg" width="100%" style="margin:0; padding:0; border:none; display:block" border="0" alt="Extra" />
 						</td>
 					</tr>
 				</table>
@@ -336,136 +381,109 @@
 				</td></table>
 
 	<!-- END FULL WIDTH DOWN TEXT -->
-	<!-- start SIDE BY SIDE CTA Two column layout, all contents-->
+	<!-- START SIDE BY SIDE CTA 2 column layout, HOVER-->
+	<div class="parent stack" width="640">
+		<div class="child">
+							  <!-- FIRST COLUMN CONTENT TABLE -->
 
-<div class="MOD-3">
-	<table class="w-resize100 stack" width="640" bgcolor="#000000" border="0" cellspacing="0" cellpadding="0" align="center" style="margin:0 auto; width:640px;" >
-		<tbody><tr>
-		  <td class="paint-area" align="center" >
-			<table class="resize90" width="600" border="0" cellspacing="0" cellpadding="0" align="center">
-				<tbody><tr>
-				  <th class="stack resize100 " width="285" valign="top" align="center">
-				  <!-- FIRST COLUMN CONTENT TABLE -->
-
-				  <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="border: 1px solid #f94040;">
-					<tbody>
-					<tr>
-					<td style="font-size:0px; line-height:0px" height="20">&nbsp;</td>
-				</tr>
-					  <tr>
-					   
-						<td class="left-align" align="left" style="font-family: Helvetica, sans-serif; font-size:22px; font-weight: 500; color:#f94040; line-height:24px; -webkit-text-size-adjust: none; padding-left: 25px; padding-right: 25px;">
-							Don&#8217;t have a login?
-						</td>
-						
-					</tr>
-					<tr>
-						<td style="font-size:0px; line-height:0px" height="5">&nbsp;</td>
-					</tr>
-					  <tr>
-					 
-					  <td class="left-align small-text-resize" align="left" style="font-family: Helvetica, sans-serif; font-size:14px; color:#f94040; line-height:30px; -webkit-text-size-adjust: none; font-weight:400; padding-left: 25px;">
-					  <font face="Arial, sans-serif" class="paint-area paint-area--text">
-						Start by activating your account.
-					  </font>
-					  </td>
-					  
-					</tr>
-					<tr>
-					  <td style="font-size:0px; line-height:0px" height="10">&nbsp;</td>
-					</tr>
-				<tr>
-						<td align="center">
-
-				<style>
-							.effect {text-align: left; display: inline-block; position: relative; text-decoration: none;overflow: hidden;}
-		.effect.effect-2 { transition: all 0.2s linear 0s; &:before {content: "➜";align-items: center; justify-content: center; display: flex; position: absolute; top: 0; right: -50px; width: 50px; height: 100%; background-color: #ffffff5e; transition: all 0.2s linear 0s;} &:hover {text-indent: 30px; &:before {right: 0; text-indent: 0px; }}}
-				</style>
-						<!-- BULLETPROOF BUTTON -->
-						<table class="w-resize90 " width="100%" border="0" cellspacing="0" cellpadding="12">
-						<tbody><tr>
-						<td class="w-resize-button effect effect-2" align="left" 
-						style="font-family:Helvetica, sans-serif; font-size:22px;font-weight: 400;color:#ffffff; display:block;vertical-align:middle; -webkit-text-size-adjust: none; padding:12px 0px 12px 12px; margin-left: 25px; margin-right: 25px; background-color: #f94040; "
-						<a href="#link" target="_blank" style="color:#ffffff; text-decoration:none; display:inline-block; width:100%">Activate!</a>
-						</td>
-						</tr>
-						</tbody></table>
-						<!-- BULLETPROOF BUTTON -->
-						</td>
-					</tr>
-					<tr>
-					<td style="font-size:0px; line-height:0px" height="20">&nbsp;</td>
-				</tr>
-				
-				</tbody></table>
-
-				<!-- MOBILE ONLY SPACER UNDER FIRST CTA -->
-				<td class="stack" style="font-size:0px; line-height:0px" height="30">&nbsp;</td>
-				<!-- END FIRST COLUMN CONTENT TABLE -->
-				  </th>
-				  <th class="stack w-resize100 h-resize50px" style="font-size:0px; line-height:0px" width="30">&nbsp;</th>
-				  <th class="stack w-resize100" width="285" valign="top" align="center">
-	
-				  <!-- SECOND COLUMN CONTENT TABLE -->
-				  <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="border: 1px solid #00bfff;">
-					<tbody>
-					<tr>
-					<td style="font-size:0px; line-height:0px" height="20">&nbsp;</td>
-				</tr>
-					  <tr>
-					   
-						<td class="left-align" align="left" style="font-family: Helvetica, sans-serif; font-size:22px; font-weight: 500; color:#00bfff; line-height:24px; -webkit-text-size-adjust: none; padding-left: 25px; padding-right: 25px;">
-							Already have a login?
-						</td>
-						
-					</tr>
-					<tr>
-						<td style="font-size:0px; line-height:0px" height="5">&nbsp;</td>
-					</tr>
-					  <tr>
-					 
-					  <td class="left-align small-text-resize" align="left" style="font-family: Helvetica, sans-serif; font-size:14px; color:#00bfff; line-height:30px; -webkit-text-size-adjust: none; font-weight:400; padding-left: 25px;">
-					  <font face="Arial, sans-serif" class="paint-area paint-area--text">
-						Explore your Online Newspaper.
-					  </font>
-					  </td>
-					  
-					</tr>
-					<tr>
-					  <td style="font-size:0px; line-height:0px" height="10">&nbsp;</td>
-					</tr>
-				<tr>
-						<td align="center">
-						<!-- BULLETPROOF BUTTON -->
-						<table class="w-resize90 " width="100%" border="0" cellspacing="0" cellpadding="12">
-							<tbody><tr>
-							<td class="w-resize-button effect effect-2" align="left" 
-							style="font-family:Helvetica, sans-serif; font-size:22px;font-weight: 400;color:#ffffff; display:block;vertical-align:middle; -webkit-text-size-adjust: none; padding:12px 0px 12px 12px; margin-left: 25px; margin-right: 25px; background-color: #00bfff;"
-							<a href="#link" target="_blank" style="color:#ffffff; text-decoration:none; display:inline-block; width:100%">Explore!</a>
-							</td>
+							  <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="border: 1px solid #f94040;">
+								<tbody>
+								<tr>
+								<td style="font-size:0px; line-height:0px" height="20">&nbsp;</td>
 							</tr>
-							</tbody></table>
-							<!-- BULLETPROOF BUTTON -->
-						</td>
-					</tr>
-					<tr>
-					<td style="font-size:0px; line-height:0px" height="20">&nbsp;</td>
-				</tr>
-				
-				</tbody></table>
-				<!-- MOBILE ONLY SPACER UNDER FIRST CTA -->
-				<td class="stack" style="font-size:0px; line-height:0px" height="20">&nbsp;</td>
-				
-				<!-- END FIRST COLUMN CONTENT TABLE -->
-				  </th>
-				</tr>
-			</tbody></table>
-	</td></tr>
-	</tbody></table>
+								  <tr>
+								   
+									<td class="left-align" align="left" style="font-family: Helvetica, sans-serif; font-size:22px; font-weight: 500; color:#f94040; line-height:24px; -webkit-text-size-adjust: none; padding-left: 25px; padding-right: 25px; ">
+										Don&#8217;t have a login?
+									</td>
+									
+								</tr>
+								<tr>
+									<td style="font-size:0px; line-height:0px" height="5">&nbsp;</td>
+								</tr>
+								  <tr>
+								 
+								  <td class="left-align small-text-resize" align="left" style="font-family: Helvetica, sans-serif; font-size:14px; color:#f94040; line-height:30px; -webkit-text-size-adjust: none; font-weight:400; padding-left: 25px;">
+								  <font face="Arial, sans-serif" class="paint-area paint-area--text">
+									Start by activating your account.
+								  </font>
+								  </td>
+								  
+								</tr>
+								<tr>
+								  <td style="font-size:0px; line-height:0px" height="10">&nbsp;</td>
+								</tr>
+							<tr>
+									<td align="center">
+									<!-- BULLETPROOF BUTTON -->
+									<table class="w-resize90 " width="100%" border="0" cellspacing="0" cellpadding="12">
+									<tbody><tr>
+									<td class="w-resize-button effect effect-2" align="left" 
+									style="font-family:Helvetica, sans-serif; font-size:22px;font-weight: 400;color:#ffffff; display:block;vertical-align:middle; -webkit-text-size-adjust: none; padding:12px 0px 12px 12px; margin-left: 25px; margin-right: 25px; background-color: #f94040;">
+									<a href="#link" target="_blank" style="color:#ffffff; text-decoration:none; display:inline-block; width:100%">Activate!</a>
+									</td>
+									</tr>
+									</tbody></table>
+									<!-- BULLETPROOF BUTTON -->
+									</td>
+								</tr>
+								<tr>
+								<td style="font-size:0px; line-height:0px" height="20">&nbsp;</td>
+							</tr>
+							</tbody></table></div>
+
+
+		<div class="child">
+							  <!-- SECOND COLUMN CONTENT TABLE -->
+
+							  <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="border: 1px solid #00bfff;">
+								<tbody>
+								<tr>
+								<td style="font-size:0px; line-height:0px" height="20">&nbsp;</td>
+							</tr>
+								  <tr>
+								   
+									<td class="left-align" align="left" style="font-family: Helvetica, sans-serif; font-size:22px; font-weight: 500; color:#00bfff; line-height:24px; -webkit-text-size-adjust: none; padding-left: 25px; padding-right: 25px;">
+										Already have a login?
+									</td>
+									
+								</tr>
+								<tr>
+									<td style="font-size:0px; line-height:0px" height="5">&nbsp;</td>
+								</tr>
+								  <tr>
+								 
+								  <td class="left-align small-text-resize" align="left" style="font-family: Helvetica, sans-serif; font-size:14px; color:#00bfff; line-height:30px; -webkit-text-size-adjust: none; font-weight:400; padding-left: 25px;">
+								  <font face="Arial, sans-serif" class="paint-area paint-area--text">
+									Explore your online newspaper.
+								  </font>
+								  </td>
+								  
+								</tr>
+								<tr>
+								  <td style="font-size:0px; line-height:0px" height="10">&nbsp;</td>
+								</tr>
+							<tr>
+									<td align="center">
+									<!-- BULLETPROOF BUTTON -->
+									<table class="w-resize90 " width="100%" border="0" cellspacing="0" cellpadding="12">
+									<tbody><tr>
+									<td class="w-resize-button  effect effect-2" align="left" 
+									style="font-family:Helvetica, sans-serif; font-size:22px;font-weight: 400;color:#ffffff; display:block;vertical-align:middle; -webkit-text-size-adjust: none; padding:12px 0px 12px 12px; margin-left: 25px; margin-right: 25px; background-color: #00bfff;">
+									<a href="#link" target="_blank" style="color:#ffffff; text-decoration:none; display:inline-block; width:100%">Explore!</a>
+									</td>
+									</tr>
+									</tbody></table>
+									<!-- BULLETPROOF BUTTON -->
+									</td>
+								</tr>
+								<tr>
+								<td style="font-size:0px; line-height:0px" height="20">&nbsp;</td>
+							</tr>
+							</tbody></table></div></div>
+
 	</div>
-	<!------------------------------------------------------------------------->
-	<!------------------------------------------------------------------------->
-	<!-- end SIDE BY SIDE CTA -->
+	<!-- END SIDE BY SIDE CTA 2 column layout, HOVER -->
 
 		<!-- SPACER -->
 		<tr>
